@@ -33,7 +33,9 @@ function App() {
   // set the local todo list every time the todo list changes
   useEffect(() => {
     setLocalTodo();
-  }, [todoList]);
+  }, 
+  //eslint-disable-next-line
+  [todoList]);
 
   return (
     <div className='App'>
